@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="../deps/Source_Sans_Pro-0.4.5/font.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="../deps/Source_Sans_Pro-0.4.7/font.css" rel="stylesheet">
 <!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
@@ -35,7 +35,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">multinma</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.5.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.5.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -209,11 +209,11 @@ method:</p>
 <span><span class="co">#&gt; post-warmup draws per chain=1000, total post-warmup draws=4000.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;                   mean se_mean   sd    2.5%     25%     50%     75%   97.5% n_eff Rhat</span></span>
-<span><span class="co">#&gt; d[Transfusion]   -1.15    0.05 1.08   -3.32   -1.63   -1.07   -0.56    0.62   511 1.01</span></span>
-<span><span class="co">#&gt; lp__           -134.26    0.09 3.15 -141.56 -136.10 -133.90 -131.97 -129.13  1257 1.00</span></span>
-<span><span class="co">#&gt; tau               1.87    0.04 1.04    0.57    1.17    1.63    2.31    4.71   816 1.00</span></span>
+<span><span class="co">#&gt; d[Transfusion]   -1.17    0.03 0.99   -3.55   -1.67   -1.07   -0.57    0.61  1236    1</span></span>
+<span><span class="co">#&gt; lp__           -175.56    0.10 3.16 -182.58 -177.37 -175.20 -173.28 -170.42  1048    1</span></span>
+<span><span class="co">#&gt; tau               1.87    0.03 1.04    0.56    1.16    1.62    2.30    4.53  1251    1</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Samples were drawn using NUTS(diag_e) at Tue Feb 21 12:08:22 2023.</span></span>
+<span><span class="co">#&gt; Samples were drawn using NUTS(diag_e) at Fri Nov 17 12:04:41 2023.</span></span>
 <span><span class="co">#&gt; For each parameter, n_eff is a crude measure of effective sample size,</span></span>
 <span><span class="co">#&gt; and Rhat is the potential scale reduction factor on split chains (at </span></span>
 <span><span class="co">#&gt; convergence, Rhat=1).</span></span></code></pre></div>
@@ -226,11 +226,7 @@ be examined by changing the <code>pars</code> argument:</p>
 <p>The prior and posterior distributions can be compared visually using
 the <code><a href="../reference/plot_prior_posterior.html">plot_prior_posterior()</a></code> function:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/plot_prior_posterior.html">plot_prior_posterior</a></span><span class="op">(</span><span class="va">tr_fit_RE_noninf</span>, prior <span class="op">=</span> <span class="st">"het"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Warning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.</span></span>
-<span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Please use `after_stat(density)` instead.</span></span>
-<span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> The deprecated feature was likely used in the <span style="color: #0000BB;">multinma</span> package.</span></span>
-<span><span class="co">#&gt;   Please report the issue at <span style="color: #0000BB; font-style: italic;">&lt;https://github.com/dmphillippo/multinma/issues&gt;</span>.</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/plot_prior_posterior.html">plot_prior_posterior</a></span><span class="op">(</span><span class="va">tr_fit_RE_noninf</span>, prior <span class="op">=</span> <span class="st">"het"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="example_transfusion_files/figure-html/tr_RE_noninf_pp_plot-1.png" width="700" style="display: block; margin: auto;"></p>
 <p>The posterior distribution for the heterogeneity variance <span class="math inline">\(\tau^2\)</span> is summarised by</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
@@ -238,8 +234,8 @@ the <code><a href="../reference/plot_prior_posterior.html">plot_prior_posterior(
 <span><span class="va">noninf_tausq</span> <span class="op">&lt;-</span> <span class="va">noninf_tau</span><span class="op">^</span><span class="fl">2</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">noninf_tausq</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="st">"tausq"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">noninf_tausq</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       mean sd 2.5%  25%  50%  75% 97.5% Bulk_ESS Tail_ESS Rhat</span></span>
-<span><span class="co">#&gt; tausq  4.6  6 0.32 1.38 2.65 5.32 22.17     1091      879    1</span></span></code></pre></div>
+<span><span class="co">#&gt;       mean   sd 2.5%  25%  50%  75% 97.5% Bulk_ESS Tail_ESS Rhat</span></span>
+<span><span class="co">#&gt; tausq 4.57 5.97 0.32 1.35 2.64 5.29 20.52     1169     1910    1</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="random-effects-meta-analysis-with-informative-heterogeneity-prior">Random effects meta-analysis with informative heterogeneity
@@ -276,12 +272,12 @@ method:</p>
 <span><span class="co">#&gt; 4 chains, each with iter=2000; warmup=1000; thin=1; </span></span>
 <span><span class="co">#&gt; post-warmup draws per chain=1000, total post-warmup draws=4000.</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;                   mean se_mean   sd    2.5%     25%     50%     75%   97.5% n_eff Rhat</span></span>
-<span><span class="co">#&gt; d[Transfusion]   -0.77    0.01 0.43   -1.67   -1.02   -0.74   -0.48    0.05  2024    1</span></span>
-<span><span class="co">#&gt; lp__           -140.27    0.08 2.88 -146.76 -141.90 -139.92 -138.22 -135.57  1378    1</span></span>
-<span><span class="co">#&gt; tau               0.48    0.01 0.35    0.05    0.21    0.41    0.68    1.31  1383    1</span></span>
+<span><span class="co">#&gt;                   mean se_mean   sd    2.5%     25%     50%    75%   97.5% n_eff Rhat</span></span>
+<span><span class="co">#&gt; d[Transfusion]   -0.78    0.01 0.43   -1.72   -1.03   -0.76   -0.5    0.00  2075    1</span></span>
+<span><span class="co">#&gt; lp__           -180.19    0.07 2.77 -186.32 -181.82 -179.88 -178.2 -175.67  1544    1</span></span>
+<span><span class="co">#&gt; tau               0.50    0.01 0.35    0.05    0.23    0.45    0.7    1.36  1683    1</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Samples were drawn using NUTS(diag_e) at Tue Feb 21 12:08:28 2023.</span></span>
+<span><span class="co">#&gt; Samples were drawn using NUTS(diag_e) at Fri Nov 17 12:04:47 2023.</span></span>
 <span><span class="co">#&gt; For each parameter, n_eff is a crude measure of effective sample size,</span></span>
 <span><span class="co">#&gt; and Rhat is the potential scale reduction factor on split chains (at </span></span>
 <span><span class="co">#&gt; convergence, Rhat=1).</span></span></code></pre></div>
@@ -306,8 +302,8 @@ was specified on <span class="math inline">\(\tau^2\)</span>.</p>
 <span><span class="va">inf_tausq</span> <span class="op">&lt;-</span> <span class="va">inf_tau</span><span class="op">^</span><span class="fl">2</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">inf_tausq</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="st">"tausq"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">inf_tausq</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       mean   sd 2.5%  25%  50%  75% 97.5% Bulk_ESS Tail_ESS Rhat</span></span>
-<span><span class="co">#&gt; tausq 0.35 0.51    0 0.04 0.17 0.46   1.7     1267     2474    1</span></span></code></pre></div>
+<span><span class="co">#&gt;       mean   sd 2.5%  25% 50%  75% 97.5% Bulk_ESS Tail_ESS Rhat</span></span>
+<span><span class="co">#&gt; tausq 0.37 0.52    0 0.05 0.2 0.49  1.84     1463     2457    1</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2 unnumbered">
